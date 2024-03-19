@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shayan's Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html" onmouseover="hoverEffect(this)" onmouseout="hoverEffectOff(this)">Home</a></li>
+                <li><a href="page1.html">About Thorncliffe Park</a></li>
+                <li><a href="page2.html">My Future Goals</a></li>
+                <li><a href="about.html" onmouseover="hoverEffect(this)" onmouseout="hoverEffectOff(this)">About</a></li>
+                <li><a href="contact.html" onmouseover="hoverEffect(this)" onmouseout="hoverEffectOff(this)">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <button id="namePromptButton">Enter Your Name So We Can Connect!</button>
+    <p id="nameDisplay"></p>
+    
+    <div id="resumeBox">
+        <p>Check out my resume:</p>
+        <a href="Shayan_Syed_Resume_L.pdf" target="_blank">Download Resume</a>
+    </div>
+
+    <div class="bio">
+        <h1>About Shayan</h1>
+        <p>Hi! I'm Shayan Syed, a professional working at Oracle and a student at Toronto Metropolitan University. Aspiring technology consultant with a passion for combining technical expertise with strategic thinking to drive innovation and growth. Currently pursuing a degree in Business Technology Management at Toronto Metropolitan University, I have honed my skills in Microsoft Excel and Social Media while developing my leadership and communication abilities. I am eager to apply my knowledge and skills in a challenging and dynamic work environment to make a positive impact in the technology industry.</p>
+        <h2>Interests</h2>
+        <ol>
+            <li>Web Development</li>
+            <li>Machine Learning</li>
+            <li>Community Advocating</li>
+            <li>Sports</li>
+            <li>Fitness</li>
+        </ol>
+    </div>
+
+    <div id="imageContainer">
+        <a href="Shayanpic.jpg" target="_blank"><img src="Shayanpic.jpg" alt="Shayan Syed" id="profileImage" style="cursor: pointer;"></a>
+    </div>
+    
+    <section id="program">
+        <h2>Program Overview</h2>
+        <p>Business Technology Management is a program that focuses on combining business principles with ICT-based innovation. The program includes an optional co-op, case studies, and utilizes state-of-the-art classrooms and labs. It emphasizes analyzing business needs, designing technology-based processes and solutions, and effectively communicating these. The aim is to prepare students to anticipate, capitalize on, and drive business strategies and opportunities tied to technological change.</p>
+    </section>
+
+    <section>
+        <h2>Notable Coursework</h2>
+        <p>The most valuable course I have undertaken is ITM415 - Business Process Design. This course introduces a systematic approach to model, analyze, and redesign business processes using Business Process Modeling Notation (BPMN). It has been instrumental in my co-op position, enhancing my skills in organizational efficiency and effectiveness.</p>
+    </section>
+
+    <section>
+        <h2>Educational Awards</h2>
+        <p>Dean's List - Second and Third Year at Toronto Metropolitan University<br>Multiple Scholarships for Stellar Academic Records</p>
+    </section>
+
+    <section>
+        <h2>Extracurricular Activities</h2>
+        <p>As a Director of Education in the school's Consulting Club, I play a crucial role in developing cases and learning materials for students interested in consulting. My involvement in this club has been an enriching experience, allowing me to contribute significantly to my peers' educational journey.</p>
+    </section>
+    
+    <div class="content">
+        <div class="links">
+            <table>
+                <tr>
+                    <td><a href="https://www.oracle.com/">Oracle</a></td>
+                    <td>My Current Workplace: Oracle Corporation is an American multinational computer technology company headquartered in Austin, Texas, United States. In 2020, Oracle was the third-largest software company in the world by revenue and market capitalization. The company sells database software and cloud computing.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.torontomu.ca/">Toronto Metropolitan University</a></td>
+                    <td>My Current School: Toronto Metropolitan University is a public research university located in Toronto, Ontario, Canada.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <!-- New Contact Form Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <fieldset>
+                <legend>Gender:</legend>
+                <input type="radio" id="male" name="gender" value="Male"><label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female"><label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="Other"><label for="other">Other</label>
+            </fieldset>
+            
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea>
+            
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Subscribe to newsletter</label>
+            
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </form>
+    </section>
+    
+    <script src="script.js"></script>
+    <a href="Shayan_Syed_Resume_L.pdf" target="_blank">Download My Resume</a>
+</body>
+</html>
